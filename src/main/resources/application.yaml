@@ -1,0 +1,37 @@
+server:
+  port: 8099
+
+spring:
+  application:
+    name: testStudy
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db1?useSSL=false
+    username: root
+    password: 123456
+
+
+# mybatis　相关　ｘｍｌ文件在哪里　驼峰　　分页插件　打印ｓｑｌ语句的日志
+mybatis:
+  # 扫描映射文件
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    # 开启驼峰映射配置
+    map-underscore-to-camel-case: true
+
+student:
+  name: Student1
+  age: 18
+  sex: 1
+  address:
+    - 123 Main St
+    - Anytown
+    -  CA
+
+#jwt相关配置
+config:
+  jwt:
+#    加密密钥
+    secret: qwejisdjqwekg[pwejqwk[fdaaffgqweqwgyuolp[wekpvaqwe3q423dsf
+#    有效时长 单位秒
+    expiration: 604800 # 7 days in seconds
