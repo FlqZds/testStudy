@@ -2,9 +2,12 @@ package com.ddjc.cms.mapper;
 
 import com.ddjc.cms.entity.ContentType;
 import com.ddjc.cms.entity.ContentTypeExample;
-import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
+@Repository
 public interface ContentTypeMapper {
     int countByExample(ContentTypeExample example);
 
