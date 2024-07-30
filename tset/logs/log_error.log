@@ -1,0 +1,8 @@
+2024-07-23 13:09:09 |ERROR |http-nio-8099-exec-2 |controllerException.java:24 |com.ddjc.teststudy.exception.controllerException |AppException发生了
+2024-07-23 13:09:09 |ERROR |http-nio-8099-exec-2 |controllerException.java:25 |com.ddjc.teststudy.exception.controllerException |AppException(code=801, message=Token不存在)
+2024-07-23 14:00:07 |ERROR |http-nio-8099-exec-4 |controllerException.java:24 |com.ddjc.teststudy.exception.controllerException |AppException发生了
+2024-07-23 14:00:07 |ERROR |http-nio-8099-exec-4 |controllerException.java:25 |com.ddjc.teststudy.exception.controllerException |AppException(code=301, message=账户校验异常)
+2024-07-23 14:00:20 |ERROR |http-nio-8099-exec-5 |controllerException.java:24 |com.ddjc.teststudy.exception.controllerException |AppException发生了
+2024-07-23 14:00:20 |ERROR |http-nio-8099-exec-5 |controllerException.java:25 |com.ddjc.teststudy.exception.controllerException |AppException(code=301, message=账户校验异常)
+2024-07-23 14:00:22 |ERROR |http-nio-8099-exec-9 |controllerException.java:24 |com.ddjc.teststudy.exception.controllerException |AppException发生了
+2024-07-23 14:00:22 |ERROR |http-nio-8099-exec-9 |controllerException.java:25 |com.ddjc.teststudy.exception.controllerException |AppException(code=301, message=账户校验异常)

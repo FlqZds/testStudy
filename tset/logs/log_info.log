@@ -1,0 +1,67 @@
+2024-07-23 13:08:45 |INFO  |main |StartupInfoLogger.java:50 |com.ddjc.teststudy.TestStudyApplication |Starting TestStudyApplication using Java 17.0.11 with PID 32724 (D:\java\projects\testStudy\target\classes started by zds in D:\java\projects\testStudy)
+2024-07-23 13:08:45 |INFO  |main |SpringApplication.java:660 |com.ddjc.teststudy.TestStudyApplication |The following 1 profile is active: "prod"
+2024-07-23 13:08:46 |INFO  |main |TomcatWebServer.java:111 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port 8099 (http)
+2024-07-23 13:08:46 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.AprLifecycleListener |An older version [1.2.39] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+2024-07-23 13:08:46 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.AprLifecycleListener |Loaded Apache Tomcat Native library [1.2.39] using APR version [1.7.4].
+2024-07-23 13:08:46 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.AprLifecycleListener |OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2024-07-23 13:08:46 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-8099"]
+2024-07-23 13:08:46 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-07-23 13:08:46 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-23 13:08:46 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-07-23 13:08:46 |INFO  |main |ServletWebServerApplicationContext.java:296 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 801 ms
+2024-07-23 13:08:47 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-8099"]
+2024-07-23 13:08:47 |INFO  |main |TomcatWebServer.java:243 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port 8099 (http) with context path '/'
+2024-07-23 13:08:47 |INFO  |main |StartupInfoLogger.java:56 |com.ddjc.teststudy.TestStudyApplication |Started TestStudyApplication in 2.153 seconds (process running for 2.938)
+2024-07-23 13:09:08 |INFO  |http-nio-8099-exec-2 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-23 13:09:08 |INFO  |http-nio-8099-exec-2 |FrameworkServlet.java:532 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-07-23 13:09:08 |INFO  |http-nio-8099-exec-2 |FrameworkServlet.java:554 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 1 ms
+2024-07-23 13:09:21 |INFO  |http-nio-8099-exec-1 |DruidDataSource.java:930 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-07-23 13:09:22 |INFO  |http-nio-8099-exec-1 |testController.java:49 |com.ddjc.teststudy.controller.testController |已经执行login函数
+2024-07-23 13:09:22 |INFO  |http-nio-8099-exec-1 |testController.java:52 |com.ddjc.teststudy.controller.testController |打印user对象：TbUser(userId=1, account=111, username=张春晖, userpassword=111, roleId=1, nikname=一只小甜甜, roleName=admin, avatarUrl=)
+2024-07-23 13:09:22 |INFO  |http-nio-8099-exec-1 |testController.java:62 |com.ddjc.teststudy.controller.testController |打印userDTO对象：userDTO(userId=1, account=111, username=张春晖, userpassword=111, roleId=1, nikname=一只小甜甜, roleName=admin, avatarUrl=, token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjE3MTEzNjIsImV4cCI6MTcyMjMxNjE2MiwidXNlcklkIjoxLCJ1c2VybmFtZSI6IuW8oOaYpeaZliIsImFjY291bnQiOjExMSwibmlrbmFtZSI6IuS4gOWPquWwj-eUnOeUnCIsImF2YXRhclVybCI6IiIsInJvbGVJZCI6MSwicm9sZU5hbWUiOiJhZG1pbiIsInVzZXJwYXNzd29yZCI6IjExMSJ9.S27SXuIZA2GITYNgTj4Ec-KsOO69l4SqQusj-9MH448)
+2024-07-23 13:09:22 |INFO  |http-nio-8099-exec-8 |testController.java:96 |com.ddjc.teststudy.controller.testController |已经执行menu函数
+2024-07-23 13:59:16 |INFO  |main |StartupInfoLogger.java:50 |com.ddjc.teststudy.TestStudyApplication |Starting TestStudyApplication v0.0.1-SNAPSHOT using Java 17.0.11 with PID 36720 (D:\java\projects\testStudy\target\testStudy-0.0.1-SNAPSHOT.jar started by zds in D:\java\projects\testStudy\target)
+2024-07-23 13:59:16 |INFO  |main |SpringApplication.java:660 |com.ddjc.teststudy.TestStudyApplication |The following 1 profile is active: "prod"
+2024-07-23 13:59:17 |INFO  |main |TomcatWebServer.java:111 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port 8099 (http)
+2024-07-23 13:59:17 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.AprLifecycleListener |An older version [1.2.39] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+2024-07-23 13:59:17 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.AprLifecycleListener |Loaded Apache Tomcat Native library [1.2.39] using APR version [1.7.4].
+2024-07-23 13:59:17 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.AprLifecycleListener |OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2024-07-23 13:59:17 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-8099"]
+2024-07-23 13:59:17 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-07-23 13:59:17 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-23 13:59:17 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-07-23 13:59:17 |INFO  |main |ServletWebServerApplicationContext.java:296 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 1493 ms
+2024-07-23 13:59:19 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-8099"]
+2024-07-23 13:59:19 |INFO  |main |TomcatWebServer.java:243 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port 8099 (http) with context path '/'
+2024-07-23 13:59:19 |INFO  |main |StartupInfoLogger.java:56 |com.ddjc.teststudy.TestStudyApplication |Started TestStudyApplication in 3.933 seconds (process running for 4.527)
+2024-07-23 14:00:07 |INFO  |http-nio-8099-exec-1 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-23 14:00:07 |INFO  |http-nio-8099-exec-1 |FrameworkServlet.java:532 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-07-23 14:00:07 |INFO  |http-nio-8099-exec-1 |FrameworkServlet.java:554 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 1 ms
+2024-07-23 14:00:28 |INFO  |http-nio-8099-exec-6 |DruidDataSource.java:930 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-07-23 14:00:28 |INFO  |http-nio-8099-exec-6 |testController.java:49 |com.ddjc.teststudy.controller.testController |已经执行login函数
+2024-07-23 14:00:28 |INFO  |http-nio-8099-exec-6 |testController.java:52 |com.ddjc.teststudy.controller.testController |打印user对象：TbUser(userId=1, account=111, username=张春晖, userpassword=111, roleId=1, nikname=一只小甜甜, roleName=admin, avatarUrl=)
+2024-07-23 14:00:28 |INFO  |http-nio-8099-exec-6 |testController.java:62 |com.ddjc.teststudy.controller.testController |打印userDTO对象：userDTO(userId=1, account=111, username=张春晖, userpassword=111, roleId=1, nikname=一只小甜甜, roleName=admin, avatarUrl=, token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjE3MTQ0MjgsImV4cCI6MTcyMjMxOTIyOCwidXNlcklkIjoxLCJ1c2VybmFtZSI6IuW8oOaYpeaZliIsImFjY291bnQiOjExMSwibmlrbmFtZSI6IuS4gOWPquWwj-eUnOeUnCIsImF2YXRhclVybCI6IiIsInJvbGVJZCI6MSwicm9sZU5hbWUiOiJhZG1pbiIsInVzZXJwYXNzd29yZCI6IjExMSJ9.XrHWky2ngAPxmYSsCtlPtU98QxE4jLW5j9GATJ2tBQg)
+2024-07-23 14:00:28 |INFO  |http-nio-8099-exec-7 |testController.java:96 |com.ddjc.teststudy.controller.testController |已经执行menu函数
+2024-07-23 14:01:01 |INFO  |SpringApplicationShutdownHook |DruidDataSource.java:1825 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} closed
+2024-07-23 14:12:35 |INFO  |main |StartupInfoLogger.java:50 |com.ddjc.teststudy.TestStudyApplication |Starting TestStudyApplication v0.0.1-SNAPSHOT using Java 17.0.11 with PID 45948 (D:\java\projects\testStudy\target\testStudy-0.0.1-SNAPSHOT.jar started by zds in D:\java\projects\testStudy\target)
+2024-07-23 14:12:35 |INFO  |main |SpringApplication.java:660 |com.ddjc.teststudy.TestStudyApplication |The following 1 profile is active: "prod"
+2024-07-23 14:12:37 |INFO  |main |TomcatWebServer.java:111 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat initialized with port 8099 (http)
+2024-07-23 14:12:37 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.AprLifecycleListener |An older version [1.2.39] of the Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [2.0.5]
+2024-07-23 14:12:37 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.AprLifecycleListener |Loaded Apache Tomcat Native library [1.2.39] using APR version [1.7.4].
+2024-07-23 14:12:37 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.AprLifecycleListener |OpenSSL successfully initialized [OpenSSL 3.0.11 19 Sep 2023]
+2024-07-23 14:12:37 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Initializing ProtocolHandler ["http-nio-8099"]
+2024-07-23 14:12:37 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardService |Starting service [Tomcat]
+2024-07-23 14:12:37 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.StandardEngine |Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-23 14:12:37 |INFO  |main |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring embedded WebApplicationContext
+2024-07-23 14:12:37 |INFO  |main |ServletWebServerApplicationContext.java:296 |org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext |Root WebApplicationContext: initialization completed in 1690 ms
+2024-07-23 14:12:38 |INFO  |main |DirectJDKLog.java:173 |org.apache.coyote.http11.Http11NioProtocol |Starting ProtocolHandler ["http-nio-8099"]
+2024-07-23 14:12:38 |INFO  |main |TomcatWebServer.java:243 |org.springframework.boot.web.embedded.tomcat.TomcatWebServer |Tomcat started on port 8099 (http) with context path '/'
+2024-07-23 14:12:39 |INFO  |main |StartupInfoLogger.java:56 |com.ddjc.teststudy.TestStudyApplication |Started TestStudyApplication in 4.347 seconds (process running for 5.036)
+2024-07-23 14:13:41 |INFO  |http-nio-8099-exec-1 |DirectJDKLog.java:173 |org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] |Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-23 14:13:41 |INFO  |http-nio-8099-exec-1 |FrameworkServlet.java:532 |org.springframework.web.servlet.DispatcherServlet |Initializing Servlet 'dispatcherServlet'
+2024-07-23 14:13:41 |INFO  |http-nio-8099-exec-1 |FrameworkServlet.java:554 |org.springframework.web.servlet.DispatcherServlet |Completed initialization in 1 ms
+2024-07-23 14:13:41 |INFO  |http-nio-8099-exec-1 |DruidDataSource.java:930 |com.alibaba.druid.pool.DruidDataSource |{dataSource-1} inited
+2024-07-23 14:13:41 |INFO  |http-nio-8099-exec-1 |testController.java:49 |com.ddjc.teststudy.controller.testController |已经执行login函数
+2024-07-23 14:13:41 |INFO  |http-nio-8099-exec-1 |testController.java:52 |com.ddjc.teststudy.controller.testController |打印user对象：TbUser(userId=1, account=111, username=张春晖, userpassword=111, roleId=1, nikname=一只小甜甜, roleName=admin, avatarUrl=)
+2024-07-23 14:13:41 |INFO  |http-nio-8099-exec-1 |testController.java:62 |com.ddjc.teststudy.controller.testController |打印userDTO对象：userDTO(userId=1, account=111, username=张春晖, userpassword=111, roleId=1, nikname=一只小甜甜, roleName=admin, avatarUrl=, token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MjE3MTUyMjEsImV4cCI6MTcyMjMyMDAyMSwidXNlcklkIjoxLCJ1c2VybmFtZSI6IuW8oOaYpeaZliIsImFjY291bnQiOjExMSwibmlrbmFtZSI6IuS4gOWPquWwj-eUnOeUnCIsImF2YXRhclVybCI6IiIsInJvbGVJZCI6MSwicm9sZU5hbWUiOiJhZG1pbiIsInVzZXJwYXNzd29yZCI6IjExMSJ9.AOShCQYO0Z7Okii1PH0hWjsnA7YlvovKZVxn9X_Dsnw)
+2024-07-23 14:13:41 |INFO  |http-nio-8099-exec-2 |testController.java:96 |com.ddjc.teststudy.controller.testController |已经执行menu函数
