@@ -136,9 +136,9 @@
   </select>
 
   <select id="selectByRoleIDAndParentID" resultType="com.ddjc.teststudy.beans.menuDTO">
-    select r.*
-    from tb_right r left join role_right rr on r.rightid = rr.rightid
-    where rr.roleid = #{roleID,jdbcType=INTEGER} and r.parentid = #{parentID,jdbcType=INTEGER};
+    select result.*
+    from tb_right result left join role_right rr on result.rightid = rr.rightid
+    where rr.roleid = #{roleID,jdbcType=INTEGER} and result.parentid = #{parentID,jdbcType=INTEGER};
   </select>
 
   <update id="updateByExampleSelective" parameterType="map" >

@@ -19,5 +19,12 @@
 
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.ddjc</groupId>
+            <artifactId>module_Common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
+    </dependencies>
 
 </project>
