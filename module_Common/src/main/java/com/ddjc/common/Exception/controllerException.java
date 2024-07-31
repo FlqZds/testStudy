@@ -1,19 +1,19 @@
 package com.ddjc.common.Exception;
 
-import com.ddjc.common.RESTFUL.Result;
 import com.ddjc.common.RESTFUL.ResponseEnum;
+import com.ddjc.common.RESTFUL.Result;
 import io.jsonwebtoken.ExpiredJwtException;
 import io.jsonwebtoken.MalformedJwtException;
 import io.jsonwebtoken.security.SignatureException;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.converter.HttpMessageNotWritableException;
-import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 
-@ControllerAdvice
+@RestControllerAdvice
 //@Component
 @Slf4j
 public class controllerException {
