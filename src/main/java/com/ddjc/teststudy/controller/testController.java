@@ -1,6 +1,6 @@
 package com.ddjc.teststudy.controller;
 
-import com.ddjc.common.RESTFUL.R;
+import com.ddjc.common.RESTFUL.Result;
 import com.ddjc.common.RESTFUL.ResponseEnum;
 import com.ddjc.teststudy.beans.menuDTO;
 import com.ddjc.teststudy.beans.userDTO;
@@ -35,12 +35,12 @@ public class testController {
 
 
     @GetMapping("test001")
-    public R basic_test001() {
+    public Result basic_test001() {
         String s = testService.test001();
 //        int i = 1/0;
         log.info("已经执行test001函数");
 
-        return new R(ResponseEnum.SUCCESS, s);
+        return new Result(ResponseEnum.SUCCESS, s);
     }
 
     @Autowired
@@ -51,7 +51,7 @@ public class testController {
     @Operation(summary = "测试接口")
     // 登录接口
     @GetMapping("login")
-    public R login_test001( String userName, String userPassword) {
+    public Result login_test001(String userName, String userPassword) {
         TbUser user = testService.login(userName, userPassword);
 //        int i = 1/0;
         log.info("已经执行login函数");
@@ -69,8 +69,8 @@ public class testController {
 
         log.info("打印userDTO对象：" + userDTO);
 
-        R r = new R(ResponseEnum.SUCCESS, userDTO);
-        return r;
+        Result result = new Result(ResponseEnum.SUCCESS, userDTO);
+        return result;
     }
 
 
@@ -94,7 +94,7 @@ public class testController {
     //菜单权限 - 树状菜单
     @GetMapping("menu")
     @checkLogin
-    public R menu_test001(HttpServletRequest request) {
+    public Result menu_test001(HttpServletRequest request) {
 //todo 前端传来的token需要验证，防止伪造token
 //todo token参数校验
 
@@ -103,23 +103,23 @@ public class testController {
         List<menuDTO> menuTree = rbacService.generateMenuTree(roleId);
 //todo menuTree 参数校验
         log.info("已经执行menu函数");
-        return new R(ResponseEnum.SUCCESS, menuTree);
+        return new Result(ResponseEnum.SUCCESS, menuTree);
     }
 
 
 
     @emPowerment(value = "TEST_AUDIT")
     @GetMapping("/aduit")
-    public R approval_test001() {
+    public Result approval_test001() {
         log.info("审批测试001");
-        return new R(ResponseEnum.SUCCESS, null);
+        return new Result(ResponseEnum.SUCCESS, null);
     }
 
     @emPowerment(value = "TEST_SEARCH")
     @GetMapping("/search")
-    public R search_test001() {
+    public Result search_test001() {
         log.info("搜索测试001");
-        return new R(ResponseEnum.SUCCESS, null);
+        return new Result(ResponseEnum.SUCCESS, null);
     }
 
 
@@ -129,9 +129,9 @@ public class testController {
 
     @checkLogin
     @GetMapping("/smsTest")
-    public R smsTest_test001(@RequestParam String phone, @RequestParam String code) {
+    public Result smsTest_test001(@RequestParam String phone, @RequestParam String code) {
         smsService.sendSMS(phone, code);
-        return new R(ResponseEnum.SUCCESS, null);
+        return new Result(ResponseEnum.SUCCESS, null);
     }
 
 
@@ -143,14 +143,14 @@ public class testController {
     // 文件上传 oss服务器
     @checkLogin
     @PostMapping("/upload")
-    public R upload_test001(@RequestParam("file") MultipartFile file) throws IOException {
+    public Result upload_test001(@RequestParam("file") MultipartFile file) throws IOException {
         String originalFilename = file.getOriginalFilename();
         InputStream inputStream = file.getInputStream();
 
         String module = "avatar";
 
         String url = fileImplement.upload(inputStream, originalFilename, module);
-        return new R(ResponseEnum.SUCCESS, url);
+        return new Result(ResponseEnum.SUCCESS, url);
     }
 
     @GetMapping("/tt")

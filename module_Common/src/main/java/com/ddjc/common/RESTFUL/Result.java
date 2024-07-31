@@ -8,13 +8,13 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class R<T> {
+public class Result<T> {
 
     private String code;
     private String message;
     private T data;
 
-    public R(ResponseEnum responseEnum, T data){
+    public Result(ResponseEnum responseEnum, T data){
         this.code = responseEnum.getCode();
         this.message = responseEnum.getMessage();
         this.data = data;

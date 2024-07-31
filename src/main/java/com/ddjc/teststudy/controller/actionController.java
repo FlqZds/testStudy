@@ -1,6 +1,6 @@
 package com.ddjc.teststudy.controller;
 
-import com.ddjc.common.RESTFUL.R;
+import com.ddjc.common.RESTFUL.Result;
 import com.ddjc.common.RESTFUL.ResponseEnum;
 import com.ddjc.teststudy.common.ano.emPowerment;
 import jakarta.servlet.http.HttpServletRequest;
@@ -26,9 +26,9 @@ public class actionController {
 
     //    @emPowerment(value = "TEST_AUDIT")
     @GetMapping("admin/aduit")
-    public R approval_test001(HttpServletRequest request) {
+    public Result approval_test001(HttpServletRequest request) {
         log.info("审批测试001");
-        return new R(ResponseEnum.SUCCESS, null);
+        return new Result(ResponseEnum.SUCCESS, null);
     }
 
 
@@ -37,7 +37,7 @@ public class actionController {
 
     //传本地
     @PostMapping("admin/uploadLocal")
-    public R uploadLocal(HttpServletRequest request, @RequestParam("file") MultipartFile file) {
+    public Result uploadLocal(HttpServletRequest request, @RequestParam("file") MultipartFile file) {
         log.info("Servlet的请求路径：" + request.getServletPath() + "某个目录的路径：" + request.getServletContext().getRealPath("/"));
 
         String fileName = file.getOriginalFilename();
@@ -49,15 +49,15 @@ public class actionController {
         }
         catch (IOException ioException) {
             log.error("上传文件失败：" + ioException.getMessage());
-            return new R(ResponseEnum.LOCAL_UPLOAD_ERROR, ioException.getMessage());
+            return new Result(ResponseEnum.LOCAL_UPLOAD_ERROR, ioException.getMessage());
         }
 
-        return new R(ResponseEnum.SUCCESS, null);
+        return new Result(ResponseEnum.SUCCESS, null);
     }
 
     //下载本地文件
     @GetMapping("admin/downloadLocal")
-    public R downloadLocal(HttpServletResponse resp, @RequestParam("fileName") String fileName) {
+    public Result downloadLocal(HttpServletResponse resp, @RequestParam("fileName") String fileName) {
         log.info("下载测试001");
 
         resp.setHeader("Content-Type", "application/octet-stream"); // 设置头信息，告诉浏览器这是个文件
@@ -72,19 +72,19 @@ public class actionController {
 
         } catch (FileNotFoundException e) {
             log.error("文件未找到：" + e.getMessage()); //日志记录
-            return new R(ResponseEnum.LOCAL_DOWNLOAD_NOT_FOUND_ERROR, null); //给前端的错误信息
+            return new Result(ResponseEnum.LOCAL_DOWNLOAD_NOT_FOUND_ERROR, null); //给前端的错误信息
         } catch (IOException ioException) {
             log.error("下载文件失败：" + ioException.getMessage());
-            return new R(ResponseEnum.LOCAL_DOWNLOAD_ERROR, null);
+            return new Result(ResponseEnum.LOCAL_DOWNLOAD_ERROR, null);
         }
-        return new R(ResponseEnum.SUCCESS, null);
+        return new Result(ResponseEnum.SUCCESS, null);
     }
 
 
     @emPowerment(value = "TEST_SEARCH")
     @GetMapping("/search")
-    public R search_test001() {
+    public Result search_test001() {
         log.info("搜索测试001");
-        return new R(ResponseEnum.SUCCESS, null);
+        return new Result(ResponseEnum.SUCCESS, null);
     }
 }
