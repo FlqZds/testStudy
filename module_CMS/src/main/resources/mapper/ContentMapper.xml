@@ -146,6 +146,11 @@
       <include refid="Example_Where_Clause" />
     </if>
   </select>
+
+  <select id="selectByContentId" resultType="com.ddjc.cms.entity.Content">
+    select * from rbac.content where content_id = #{contentId}
+  </select>
+
   <update id="updateByExampleSelective" parameterType="map" >
     update content
     <set >

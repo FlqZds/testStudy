@@ -30,4 +30,7 @@ public interface ContentMapper {
     int updateByPrimaryKeySelective(Content record);
 
     int updateByPrimaryKey(Content record);
+
+//    根据内容id查出对应content的所有数据
+    List<Content> selectByContentId(Integer contentId);
 }
