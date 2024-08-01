@@ -1,8 +1,8 @@
-package com.ddjc.teststudy.service.implement;
+package com.ddjc.service.implement;
 
 import com.aliyun.oss.OSS;
-import com.ddjc.teststudy.config.OSSconfig;
-import com.ddjc.teststudy.service.fileService;
+import com.ddjc.MyConfig.OSSconfig;
+import com.ddjc.service.fileService;
 import org.joda.time.DateTime;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package com.ddjc.teststudy.config;
+package com.ddjc.MyConfig;
 
 import com.aliyun.oss.OSS;
 import com.aliyun.oss.OSSClientBuilder;

@@ -1,11 +1,9 @@
 package com.ddjc.teststudy;
 
 import com.ddjc.teststudy.beans.menuDTO;
-import com.ddjc.teststudy.config.OSSconfig;
 import com.ddjc.teststudy.config.SMSconfig;
 import com.ddjc.teststudy.entity.TbUser;
 import com.ddjc.teststudy.mapper.TbUserMapper;
-import com.ddjc.teststudy.service.implement.fileImplement;
 import com.ddjc.teststudy.service.testService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -98,19 +96,6 @@ class TestStudyApplicationTests {
     }
 
 
-    @Autowired
-    OSSconfig osSconfig;
-
-    @Autowired
-    fileImplement fileImplement;
-    //    测试oss
-    @Test
-    void test006(){
-        System.out.println(osSconfig.getBucketName());
-
-//        InputStream inputStream = new FileInputStream();
-//        fileImplement.upload("test.txt","/Users/ddjc/Desktop/test.txt");
-    }
 
     @Autowired
     private RedisTemplate redisTemplate;

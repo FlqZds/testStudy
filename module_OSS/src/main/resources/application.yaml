@@ -64,14 +64,6 @@ mybatis:
     # 开启驼峰映射配置
     map-underscore-to-camel-case: true
 
-student:
-  name: Student1
-  age: 18
-  sex: 1
-  address:
-    - 123 Main St
-    - Anytown
-    - CA
 
 #jwt相关配置
 config:
@@ -81,11 +73,12 @@ config:
     #    有效时长 单位秒
     expiration: 604800 # 7 days in seconds
 
-  #    sms相关配置
-  sms:
-    accessKeyId: LTAI5tQYDzLgUkK5Qtdhsk1W
-    accessSecret: iJWTXrJz3BDcTmmQV4o5HtZqniZnKh
-    signName: 扩新
-    regionId: cn-hangzhou
+
+  #    阿里云oss相关配置
+  oss:
+    endpoint: oss-cn-beijing.aliyuncs.com
+    keyID: LTAI5tMUEqEJARNqNsTqri3K
+    keySecret: n6s4joRx3bcbY7mgciChrUYt5skOXZ
+    bucketName: zdsflq
 
 

@@ -1,16 +1,14 @@
 package com.ddjc.teststudy.controller;
 
-import com.ddjc.common.RESTFUL.Result;
 import com.ddjc.common.RESTFUL.ResponseEnum;
+import com.ddjc.common.RESTFUL.Result;
 import com.ddjc.teststudy.common.ano.emPowerment;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.tomcat.util.http.fileupload.IOUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -31,29 +29,6 @@ public class actionController {
         return new Result(ResponseEnum.SUCCESS, null);
     }
 
-
-    @Autowired
-    private com.ddjc.teststudy.service.implement.fileImplement fileImplement;
-
-    //传本地
-    @PostMapping("admin/uploadLocal")
-    public Result uploadLocal(HttpServletRequest request, @RequestParam("file") MultipartFile file) {
-        log.info("Servlet的请求路径：" + request.getServletPath() + "某个目录的路径：" + request.getServletContext().getRealPath("/"));
-
-        String fileName = file.getOriginalFilename();
-        log.info("上传的文件名：" + fileName);
-//        String filePath = request.getServletContext().getRealPath("/");
-        String filePath = "D:"+File.separator+"uplo";
-        try {
-            file.transferTo(new java.io.File(filePath+ File.separator+fileName));
-        }
-        catch (IOException ioException) {
-            log.error("上传文件失败：" + ioException.getMessage());
-            return new Result(ResponseEnum.LOCAL_UPLOAD_ERROR, ioException.getMessage());
-        }
-
-        return new Result(ResponseEnum.SUCCESS, null);
-    }
 
     //下载本地文件
     @GetMapping("admin/downloadLocal")

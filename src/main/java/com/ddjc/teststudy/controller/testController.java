@@ -1,7 +1,7 @@
 package com.ddjc.teststudy.controller;
 
-import com.ddjc.common.RESTFUL.Result;
 import com.ddjc.common.RESTFUL.ResponseEnum;
+import com.ddjc.common.RESTFUL.Result;
 import com.ddjc.teststudy.beans.menuDTO;
 import com.ddjc.teststudy.beans.userDTO;
 import com.ddjc.teststudy.common.JWTutil;
@@ -17,10 +17,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
 
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.List;
 
 @RestController
@@ -132,25 +129,6 @@ public class testController {
     public Result smsTest_test001(@RequestParam String phone, @RequestParam String code) {
         smsService.sendSMS(phone, code);
         return new Result(ResponseEnum.SUCCESS, null);
-    }
-
-
-    @Autowired
-    private com.ddjc.teststudy.service.implement.fileImplement fileImplement;
-
-
-
-    // 文件上传 oss服务器
-    @checkLogin
-    @PostMapping("/upload")
-    public Result upload_test001(@RequestParam("file") MultipartFile file) throws IOException {
-        String originalFilename = file.getOriginalFilename();
-        InputStream inputStream = file.getInputStream();
-
-        String module = "avatar";
-
-        String url = fileImplement.upload(inputStream, originalFilename, module);
-        return new Result(ResponseEnum.SUCCESS, url);
     }
 
     @GetMapping("/tt")

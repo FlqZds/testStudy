@@ -7,6 +7,7 @@
     <modules>
         <module>module_CMS</module>
         <module>module_Common</module>
+        <module>module_OSS</module>
     </modules>
 
     <parent>
