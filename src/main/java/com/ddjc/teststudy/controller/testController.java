@@ -1,10 +1,10 @@
 package com.ddjc.teststudy.controller;
 
-import com.ddjc.common.RESTFUL.ResponseEnum;
-import com.ddjc.common.RESTFUL.Result;
 import com.ddjc.teststudy.beans.menuDTO;
 import com.ddjc.teststudy.beans.userDTO;
 import com.ddjc.teststudy.common.JWTutil;
+import com.ddjc.teststudy.common.RESTFUL.ResponseEnum;
+import com.ddjc.teststudy.common.RESTFUL.Result;
 import com.ddjc.teststudy.common.ano.checkLogin;
 import com.ddjc.teststudy.common.ano.emPowerment;
 import com.ddjc.teststudy.entity.TbUser;
@@ -48,7 +48,7 @@ public class testController {
     @Operation(summary = "测试接口")
     // 登录接口
     @GetMapping("login")
-    public Result login_test001(String userName, String userPassword) {
+    public Result login_test001(@RequestParam(value = "userName") String userName, @RequestParam(value = "userPassword") String userPassword) {
         TbUser user = testService.login(userName, userPassword);
 //        int i = 1/0;
         log.info("已经执行login函数");

@@ -5,8 +5,9 @@ import com.aliyuncs.CommonResponse;
 import com.aliyuncs.IAcsClient;
 import com.aliyuncs.exceptions.ClientException;
 import com.aliyuncs.http.MethodType;
-import com.ddjc.common.Exception.AppException;
-import com.ddjc.common.RESTFUL.ResponseEnum;
+
+import com.ddjc.teststudy.common.Exception.AppException;
+import com.ddjc.teststudy.common.RESTFUL.ResponseEnum;
 import com.ddjc.teststudy.config.SMSconfig;
 import com.google.gson.Gson;
 import org.springframework.beans.factory.annotation.Autowired;

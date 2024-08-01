@@ -1,7 +1,8 @@
 package com.ddjc.teststudy.controller;
 
-import com.ddjc.common.RESTFUL.ResponseEnum;
-import com.ddjc.common.RESTFUL.Result;
+
+import com.ddjc.teststudy.common.RESTFUL.ResponseEnum;
+import com.ddjc.teststudy.common.RESTFUL.Result;
 import com.ddjc.teststudy.common.ano.emPowerment;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;

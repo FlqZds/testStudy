@@ -1,7 +1,7 @@
 package com.ddjc.teststudy.config;
 
 
-import com.ddjc.common.interceptor.myInterceptor;
+import com.ddjc.teststudy.interceptor.myInterceptor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;

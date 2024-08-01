@@ -1,8 +1,9 @@
 package com.ddjc.teststudy.service;
 
-import com.ddjc.common.Exception.AppException;
-import com.ddjc.common.RESTFUL.ResponseEnum;
+
 import com.ddjc.teststudy.beans.menuDTO;
+import com.ddjc.teststudy.common.Exception.AppException;
+import com.ddjc.teststudy.common.RESTFUL.ResponseEnum;
 import com.ddjc.teststudy.mapper.RoleRightMapper;
 import com.ddjc.teststudy.mapper.TbActionrightMapper;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -8,6 +8,7 @@
         <module>module_CMS</module>
         <module>module_Common</module>
         <module>module_OSS</module>
+        <module>module_user</module>
     </modules>
 
     <parent>
@@ -29,11 +30,11 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>com.ddjc</groupId>
-            <artifactId>module_Common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.ddjc</groupId>-->
+<!--            <artifactId>module_Common</artifactId>-->
+<!--            <version>0.0.1-SNAPSHOT</version>-->
+<!--        </dependency>-->
 
 
         <!--        <dependency>-->
@@ -165,6 +166,16 @@
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/java</directory>
+                <includes>
+                    <include>**/*.xml</include>
+                </includes>
+                <filtering>false</filtering>
+            </resource>
+        </resources>
+
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
