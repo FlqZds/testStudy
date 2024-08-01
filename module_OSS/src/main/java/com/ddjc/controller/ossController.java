@@ -2,7 +2,6 @@ package com.ddjc.controller;
 
 import com.ddjc.common.RESTFUL.ResponseEnum;
 import com.ddjc.common.RESTFUL.Result;
-import com.ddjc.teststudy.common.ano.checkLogin;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,7 +26,7 @@ public class ossController {
 
 
     // 文件上传 oss服务器
-    @checkLogin
+//    @checkLogin
     @PostMapping("/upload")
     public Result upload_test001(@RequestParam("file") MultipartFile file) throws IOException {
         String originalFilename = file.getOriginalFilename();
