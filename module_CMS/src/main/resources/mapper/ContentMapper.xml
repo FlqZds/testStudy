@@ -151,6 +151,14 @@
     select * from rbac.content where content_id = #{contentId}
   </select>
 
+
+  <select id="showAllContentByTypeId" resultType="com.ddjc.cms.entity.Content">
+    select content.*
+    from content left join content_type on content_type.id = content.type
+    where content.type=#{typeId} ;
+#     LIMIT 0, 3
+  </select>
+
   <update id="updateByExampleSelective" parameterType="map" >
     update content
     <set >

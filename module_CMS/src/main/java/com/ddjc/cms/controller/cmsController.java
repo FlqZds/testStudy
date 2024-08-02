@@ -1,19 +1,31 @@
 package com.ddjc.cms.controller;
 
+import com.ddjc.cms.entity.Content;
+import com.ddjc.cms.service.CMSservice;
 import com.ddjc.common.RESTFUL.Result;
 import com.ddjc.common.RESTFUL.ResponseEnum;
-import org.springframework.web.bind.annotation.CrossOrigin;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
+import java.util.Optional;
 
 @RestController
-@CrossOrigin
+@Slf4j
+@CrossOrigin(origins = "*")
 @RequestMapping("/admin")
 public class cmsController {
-    @GetMapping("/index")
-    public Result index() {
-        return new Result(ResponseEnum.SUCCESS, "cms模块首页");
+    @Autowired
+    private CMSservice cmsService;
+
+    @GetMapping("/{typeID}")
+    public Result index(@PathVariable("typeID") Integer typeID) {
+
+        List<Content> contents = cmsService.showContent(typeID);
+//        Optional<List<Content>> contents = cmsService.showContent(typeID);
+
+        return new Result(ResponseEnum.SUCCESS, contents);
     }
 
 

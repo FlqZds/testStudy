@@ -5,6 +5,7 @@
 
 <generatorConfiguration>
     <properties resource="config.properties"/>
+
     <context id="testTables" targetRuntime="MyBatis3">
         <property name="javaFileEncoding" value="UTF-8"></property>
         <property name="beginningDelimiter" value="`"/>

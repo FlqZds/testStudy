@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface CMSservice {
 //    新增内容
-    public Boolean addContent(String title, String content);
+    public Integer addContent(Content content);
 
 //    展示内容
     public List<Content> showContent(Integer contentId);

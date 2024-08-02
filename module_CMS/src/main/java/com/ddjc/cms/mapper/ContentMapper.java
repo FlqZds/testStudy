@@ -31,6 +31,9 @@ public interface ContentMapper {
 
     int updateByPrimaryKey(Content record);
 
-//    根据内容id查出对应content的所有数据
+//    根据typeId查出对应type的所有数据
+    List<Content> showAllContentByTypeId(@Param("typeId") Integer typeId);
+
+    //根据contentId查出对应content的数据
     List<Content> selectByContentId(Integer contentId);
 }
