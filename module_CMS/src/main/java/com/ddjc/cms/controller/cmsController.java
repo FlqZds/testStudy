@@ -19,7 +19,7 @@ public class cmsController {
     @Autowired
     private CMSservice cmsService;
 
-    @GetMapping("/{typeID}")
+    @GetMapping("/{typeID}")  //改为路径参数
     public Result index(@PathVariable("typeID") Integer typeID) {
 
         List<Content> contents = cmsService.showContent(typeID);
